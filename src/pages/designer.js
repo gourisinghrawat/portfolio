@@ -13,7 +13,12 @@ function DesignerPage() {
           <p>
           I am a pre-final year engineering student and creative direction at Fooddle.          </p></div>
         </div>
-        
+        {/* <div className="box tagline">
+          <h3 className="taglinetext">
+            Transforming ideas into experiences with a touch of creativity and
+            technology
+          </h3>
+        </div>  */}
         
         <div className="abc">
         <img
@@ -31,6 +36,12 @@ function DesignerPage() {
             technology
           </h3>
         </div>
+        {/* <div className="box about">
+        <div className="about-text">
+        <h2>About Me</h2>
+          <p>
+          I am a pre-final year engineering student and creative direction at Fooddle.          </p></div>
+        </div> */}
 
         <div className="box skills">
         <div className="skills-text">

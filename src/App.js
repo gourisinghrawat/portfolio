@@ -47,7 +47,7 @@ function App() {
             <ThemeManager />
             <div className="container">
                 <header className="header">
-                    <h1>Gouri Singh Rawat</h1>
+                    <h2>Gouri Singh Rawat</h2>
                     <nav className="nav">
                         <Link to="/" className="nav-link">Developer</Link>
                         <Link to="/editor" className="nav-link">Editor</Link>

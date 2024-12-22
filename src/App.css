@@ -196,9 +196,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   /* Stack the boxes vertically in mobile view */
-  h3{
-    font-size: 16px;
+  h1{
+    font-size: 14px;
   }
+  h3{
+    font-size: 10px;
+  }
+  h2{
+    font-size: 12px;
+  }
+  p{
+    font-size: 8px;
+  }
+  .view-all-link,
+.resume-link{
+  font-size: 6px;
+}
   .taglinetext{
     margin-top: 2px;
   }

@@ -7,17 +7,17 @@ function DeveloperPage() {
       
         <div className="b0">
         <div className="b1">
-        <div className="box tagline">
+        {/* <div className="box tagline">
           <h3 className="taglinetext">
           Turning real-world problems into impactful, scalable software solutions.
           </h3>
-        </div>
-        {/* <div className="box about">
+        </div> */}
+        <div className="box about">
         <div className="about-text">
         <h2>About Me</h2>
           <p>
           I am a pre-final year engineering student and creative direction at Fooddle.          </p></div>
-        </div> */}
+        </div>
         
         
         <div className="abc">
@@ -30,17 +30,17 @@ function DeveloperPage() {
         
         </div>
         <div className="b2">
-        <div className="box about">
+        {/* <div className="box about">
         <div className="about-text">
         <h2>About Me</h2>
           <p>
           I am a pre-final year engineering student and creative direction at Fooddle.          </p></div>
-        </div>
-        {/* <div className="box tagline">
+        </div> */}
+        <div className="box tagline">
           <h3 className="taglinetext">
           Turning real-world problems into impactful, scalable software solutions.
           </h3>
-        </div> */}
+        </div>
 
         <div className="box skills">
         <div className="skills-text">

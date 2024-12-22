@@ -1,0 +1,58 @@
+.video-container {
+    position: relative;
+    max-width: 100%;
+    width: 600px; /* Set a fixed width or max-width */
+    margin: auto;
+  }
+  
+  .project-preview {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .control-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .control-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  
+  .timeline {
+    flex-grow: 1;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .volume-slider {
+    width: 100px;
+  }
+  
+  button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  
