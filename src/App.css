@@ -1,0 +1,221 @@
+:root {
+  --light: #C1E5C8;
+  --secondary: #203C28;
+  --background-and-text: #1C241D ;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: var(--background-and-text) ;
+  color: var(--background-and-text);
+}
+.p{
+  font-size: 20px;
+}
+
+.contact{
+  margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--light);
+  border-radius: 8px;
+  color: var(--background-and-text);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  
+  color: var(--background-and-text);
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  
+  color: var(--background-and-text);
+}
+
+.nav a:hover {
+  color: var(--background-and-text);
+}
+
+.nav .active {
+  font-weight: bold;
+  color: var(--background-and-text);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.box {
+  padding: 20px;
+  background-color:var(--light);
+  border-radius: 8px;
+}
+
+.b0{
+  display: grid;
+  grid-column: auto;
+  grid-auto-rows: auto;
+  gap: 16px;
+  height: max-content;
+
+}
+.b1{
+  grid-column: span 1;
+  display: grid;
+  height:min-content;
+  grid-template-columns: 5fr 2fr;
+  gap: 16px;
+}
+
+.headingprojects{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abc{
+  display: grid;
+  gap: 16px;
+}
+
+.b2{
+  grid-row: auto;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 16px;
+  height: auto;
+}
+.b3{
+  display: grid;
+  grid-template-rows: repeat(9 1fr);
+  gap: 16px;
+}
+
+
+
+.tagline {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.taglinetext{
+  margin-top: 80px;
+}
+
+
+.skills{
+  
+  gap: 16to;
+  background-color: var(--secondary);
+  color:#F0F0F0;
+}
+
+.about{
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+}
+
+.profile-pic {
+  
+  width: 100%;
+  border-radius: 8px;
+  
+}
+.profileimg {
+  background-image: ('./devprofile.png'); /* Use relative path */
+  
+}
+
+
+.project-preview {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  grid-row: span 8;
+}
+
+.view-all-link,
+.resume-link {
+  display: inline-block;
+  margin-top: 10px;
+  color:var(--background-and-text);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.resume-link{
+  
+  color:#F0F0F0;
+}
+
+
+.view-all-link:hover,
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color:var(--background-and-text);
+}
+
+.social-icons a:hover {
+  color: var(--background-and-text);
+}
+@media (max-width: 768px) {
+  /* Stack the boxes vertically in mobile view */
+  h3{
+    font-size: 16px;
+  }
+  .taglinetext{
+    margin-top: 2px;
+  }
+  .b0 .abc .b1 .b2 .b3 .main{
+    gap: 5px;
+  }
+  .box{padding: 10px;}
+  .main {
+    grid-template-columns: 1fr; /* Makes the layout single column */
+  }
+
+  /* Place .b3 below .b0 in mobile view */
+  .b0 {
+    order: 1; /* Ensure b0 appears first */
+  }
+
+  .b3 {
+    order: 2; /* Place b3 below b0 */
+  }
+}
