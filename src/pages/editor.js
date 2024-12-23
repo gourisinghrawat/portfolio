@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import VideoComponent from "../components/playvideo";
 
 function EditorPage() {
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+    useEffect(() => {
+      // Simulate a loading screen delay
+      const timer = setTimeout(() => {
+        setIsLoaded(true);
+      }, 500); // 1-second delay
+  
+      return () => clearTimeout(timer);
+    }, []);
+  
   return (
     <div className="main">
       
         <div className="b0">
         <div className="b1">
-        <div className="box about">
+        <div className={`box about ${isLoaded ? "visible" : ""}`}>
         <div className="about-text">
         <h2>About Me</h2>
           <p>
@@ -30,7 +42,7 @@ function EditorPage() {
         
         </div>
         <div className="b2">
-        <div className="box tagline">
+        <div className={`box tagline ${isLoaded ? "visible" : ""}`}>
           <h3 className="taglinetext">
           Shaping Moments into Unforgettable Stories by Combining Technical Mastery with Artistic Vision.
           </h3>
@@ -42,7 +54,7 @@ function EditorPage() {
           I am a pre-final year engineering student and creative direction at Fooddle.          </p></div>
         </div> */}
 
-        <div className="box skills">
+        <div className={`box skills ${isLoaded ? "visible" : ""}`}>
         <div className="skills-text">
           <h2>Technical Skills</h2>
           <p>Figma, Adobe XD, Canva, Adobe Premiere Pro, Da-Vincie Resolve, Story Boarding, Script Writing</p>
@@ -54,7 +66,7 @@ function EditorPage() {
         </div>
         </div>
         <div className="b3">
-        <div className="box projects">
+        <div className={`box projects ${isLoaded ? "visible" : ""}`}>
           <div className="headingprojects"><h2>Videos</h2>
           <a href="#view-all" className="view-all-link">
             View All ↗

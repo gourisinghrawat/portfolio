@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 
 function DesignerPage() {
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+    useEffect(() => {
+      // Simulate a loading screen delay
+      const timer = setTimeout(() => {
+        setIsLoaded(true);
+      }, 10); // 1-second delay
+  
+      return () => clearTimeout(timer);
+    }, []);
   return (
     <div className="main">
       
         <div className="b0">
         <div className="b1">
-        <div className="box about">
+        <div className={`box about ${isLoaded ? "visible" : ""}`}>
         <div className="about-text">
         <h2>About Me</h2>
           <p>
@@ -30,7 +41,7 @@ function DesignerPage() {
         
         </div>
         <div className="b2">
-        <div className="box tagline">
+        <div className={`box tagline ${isLoaded ? "visible" : ""}`}>
           <h3 className="taglinetext">
             Transforming ideas into experiences with a touch of creativity and
             technology
@@ -43,7 +54,7 @@ function DesignerPage() {
           I am a pre-final year engineering student and creative direction at Fooddle.          </p></div>
         </div> */}
 
-        <div className="box skills">
+        <div className={`box skills ${isLoaded ? "visible" : ""}`}>
         <div className="skills-text">
           <h2>Technical Skills</h2>
           <p>UI/UX Wireframing, Prototyping, Figma, Adobe Express</p>
@@ -55,7 +66,7 @@ function DesignerPage() {
         </div>
         </div>
         <div className="b3">
-        <div className="box projects">
+        <div className={`box projects ${isLoaded ? "visible" : ""}`}>
           <div className="headingprojects"><h2>Prototypes</h2>
           <a href="#view-all" className="view-all-link">
             View All ↗

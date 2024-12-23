@@ -1,7 +1,5 @@
 {
   "homepage": "https://gourisinghrawat.github.io/portfolio",
-
-
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -15,12 +13,11 @@
     "react-transition-group": "^4.4.5",
     "web-vitals": "^4.2.4"
   },
-  
   "scripts": {
     "start": "react-scripts start",
-  "build": "react-scripts build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
